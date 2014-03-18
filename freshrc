@@ -35,3 +35,5 @@ fresh config/\* --file
 
 fresh tpope/vim-pathogen autoload/pathogen.vim --file=~/.vim/autoload/pathogen.vim
 fresh tpope/vim-fugitive .               --file=~/.vim/bundle/vim-fugitive/
+fresh altercation/vim-colors-solarized . --file=~/.vim/bundle/vim-colors-solarized/
+fresh scrooloose/nerdtree .              --file=~/.vim/bundle/nerdtree/
