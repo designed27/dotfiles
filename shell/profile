@@ -1,0 +1,7 @@
+export EDITOR=vim
+
+# load local shell configuration if present
+if [[ -f ~/.bashrc.local ]]
+then
+   source ~/.bashrc.local
+fi
