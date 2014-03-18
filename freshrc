@@ -10,6 +10,8 @@
 
 fresh freshshell/fresh bin/fresh --bin
 
+fresh shell/\*
+
 fresh jasoncodes/dotfiles config/gitconfig --file
 fresh nojhan/liquidprompt liquidprompt
 
@@ -21,4 +23,5 @@ if [ ! -e ~/.gitconfig.local ]; then
     git config -f ~/.gitconfig.local user.email $email
     echo "Configured git settings in ~/.gitconfig.local. Not stored in local .dotfiles repo."
 fi
-fresh gitconfig --file
+
+fresh config/\* --file
