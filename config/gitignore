@@ -1,1 +1,4 @@
 .DS_Store
+
+# Always ignore editor ephemera
+*.swp
