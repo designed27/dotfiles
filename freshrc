@@ -35,5 +35,3 @@ fresh config/\* --file
 
 fresh tpope/vim-pathogen autoload/pathogen.vim --file=~/.vim/autoload/pathogen.vim
 fresh tpope/vim-fugitive .               --file=~/.vim/bundle/vim-fugitive/
-
-fresh vimrc --file
