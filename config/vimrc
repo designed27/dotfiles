@@ -1,5 +1,12 @@
 set nocompatible
 
+#Python
+set tabstop=8
+set expandtab
+set softtabstop=4
+set shiftwidth=4
+filetype indent on
+
 call pathogen#infect()
 
 let g:solarized_termcolors = 16
