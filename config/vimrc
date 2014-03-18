@@ -1,0 +1,24 @@
+set nocompatible
+
+call pathogen#infect()
+
+let g:solarized_termcolors = 16
+let g:solarized_termtrans = 1
+let g:solarized_bold = 1
+let g:solarized_underline = 1
+let g:solarized_italic = 1
+" let g:solarized_visibility= “normal”| “high” or “low”
+
+syntax on
+set background=dark
+colorscheme solarized
+
+filetype on
+filetype indent on
+filetype plugin on
+
+" Show trailing whitepace and spaces before a tab
+highlight ExtraWhitespace ctermbg=red guibg=red
+autocmd Syntax * syn match ExtraWhitespace /\s\+$\| \+\ze\t/ containedin=ALL
+
+set backspace=indent,eol,start
