@@ -10,6 +10,10 @@
 
 fresh freshshell/fresh bin/fresh --bin
 
+#Automatically instruct shell to source Fresh build
+fresh freshshell/fresh contrib/source-build.sh --file=~/.bash_profile
+fresh freshshell/fresh contrib/source-build.sh --file=~/.bashrc
+
 fresh shell/\*
 
 fresh jasoncodes/dotfiles config/gitconfig --file
