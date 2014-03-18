@@ -8,12 +8,14 @@
 #
 # See http://freshshell.com/readme for documentation.
 
+#Update fresh
 fresh freshshell/fresh bin/fresh --bin
 
 #Automatically instruct shell to source Fresh build
 fresh freshshell/fresh contrib/source-build.sh --file=~/.bash_profile
 fresh freshshell/fresh contrib/source-build.sh --file=~/.bashrc
 
+# Build all files in shell/ to shell.sh
 fresh shell/\*
 
 fresh jasoncodes/dotfiles config/gitconfig --file
@@ -28,4 +30,10 @@ if [ ! -e ~/.gitconfig.local ]; then
     echo "Configured git settings in ~/.gitconfig.local. Not stored in local .dotfiles repo."
 fi
 
+# Link all files in config/
 fresh config/\* --file
+
+fresh tpope/vim-pathogen autoload/pathogen.vim --file=~/.vim/autoload/pathogen.vim
+fresh tpope/vim-fugitive .               --file=~/.vim/bundle/vim-fugitive/
+
+fresh vimrc --file
